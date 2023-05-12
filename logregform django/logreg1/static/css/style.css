@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav11{
+    width: 100vw;
+}
+#formall{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 97vw;
+    height: 85vh;
+    gap: 20px;
+
+}
+#formall form{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 260px;
+    gap: 10px;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 15px;
+}
+#formall #one{
+    margin-top: 10px;
+}
+#logallin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+}
+#logform{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 9px;
+    width: 200px;
+    height: 200px;
+}

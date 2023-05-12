@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{message.tags}}">
+    {{message}}
+</div>
+{% endfor %}
+{% endif %}         
+<div class="container" id="logallin">
+    <h1>login page</h1>
+     <form action="" id="logform" method="post">
+        {% csrf_token %}
+            {{form.username.label}}
+            {{form.username}}
+            {{form.password.label}}
+            {{form.password}}
+            <button type="submit" class="btn btn-primary">submit</button>
+     </form>
+</div>
+<script>
+    $(document).ready(function(){
+        $('.alert').hide(2500);
+    });
+</script>
+{% endblock %}
